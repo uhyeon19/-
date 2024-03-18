@@ -20,13 +20,13 @@ public class TradeController {
      * @param request
      * @return
      */
-    @PostMapping("/")
+    @PostMapping
     public ResponseEntity<?> createTrade(@RequestHeader("X-Authorization-Id") Long userId, @RequestBody TradeCreateRequest request) {
         tradeService.createTrade(userId, request);
         return ResponseEntity.ok(Message.success());
     }
 
-    @GetMapping("/{tradeId}")
+    @GetMapping("/list")
     public ResponseEntity<?> selectListTrade() {
 
         return ResponseEntity.ok(Message.success());
