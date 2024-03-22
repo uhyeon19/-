@@ -72,7 +72,7 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const MainStack = () => {
   return (
-    <Stack.Navigator initialRouteName='MyProfileScreen'>
+    <Stack.Navigator initialRouteName='ChattingRoomScreen'>
       {/* 장터 페이지 */}
       <Stack.Screen name='MainScreen' component={MainScreen} options={{ headerShown: false }} />
       <Stack.Screen name='MarketScreen' component={MarketScreen} options={{ headerShown: false }} />
@@ -100,7 +100,7 @@ const MainStack = () => {
       <Stack.Screen name='ChattingRoomScreen' component={ChattingRoomScreen} options={{ headerShown: false }} />
       {/* 관심상품 페이지 */}
       <Stack.Screen name='FavoriteProductScreen' component={FavoriteProductScreen} options={{ headerShown: false }} />
-      {/* 마이 페이지 */} 
+      {/* 마이 페이지 */}
       <Stack.Screen name='MyProfileScreen' component={MyProfileScreen} options={{ headerShown: false }} />
       <Stack.Screen name='FcmTestScreen' component={FcmTestScreen} options={{ headerShown: false }} />
       <Stack.Screen name='ModifyProfileScreen' component={ModifyProfileScreen} options={{ headerShown: false }} />
